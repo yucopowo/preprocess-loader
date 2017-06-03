@@ -1,6 +1,6 @@
 {
   "name": "pp-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "webpack preprocess loader",
   "main": "index.js",
   "scripts": {

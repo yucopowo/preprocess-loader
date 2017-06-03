@@ -1,8 +1,5 @@
-# preprocess-loader
+# pp-loader
 webpack preprocess loader
-
-## Information
-
 
 
 ## Usage
@@ -10,15 +7,37 @@ webpack preprocess loader
 ### Install
 
 ```
+npm install pp-loader --save-dev
 
 ```
 
 
 ## Examples
 
-#### Gulpfile
+#### webpack.config.js
 
 ```js
+module.exports = {
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'pp-loader',
+                    options: {
+                        context: {
+                            NODE_ENV: process.env.NODE_ENV
+                        },
+                        options:{
+                            type: 'js'
+                        }
+                    }
+                }
+            }
+        ]
+    }
+};
 
 ```
 
@@ -31,6 +50,15 @@ webpack preprocess loader
 #### Example JavaScript File
 
 ```js
+
+/* @if NODE_ENV='development' */
+console.log('NODE_ENV=','/* @echo NODE_ENV */');
+/* @endif */
+
+
+/* @if NODE_ENV!='development' */
+console.log('NODE_ENV!=','/* @echo NODE_ENV */');
+/* @endif */
 
 ```
 
