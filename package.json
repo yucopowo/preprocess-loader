@@ -1,7 +1,7 @@
 {
-  "name": "preprocess-loader",
+  "name": "pp-loader",
   "version": "0.0.1",
-  "description": "webpack preprocess loader ",
+  "description": "webpack preprocess loader",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=production webpack --config=./test/webpack.config.js"
