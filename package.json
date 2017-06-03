@@ -16,7 +16,7 @@
     "loader"
   ],
   "author": "yucopowo",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/yucopowo/preprocess-loader/issues"
   },
