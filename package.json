@@ -1,0 +1,30 @@
+{
+  "name": "preprocess-loader",
+  "version": "0.0.1",
+  "description": "webpack preprocess loader ",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=production webpack --config=./test/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yucopowo/preprocess-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "preprocess",
+    "loader"
+  ],
+  "author": "yucopowo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yucopowo/preprocess-loader/issues"
+  },
+  "homepage": "https://github.com/yucopowo/preprocess-loader#readme",
+  "devDependencies": {
+    "html-loader": "^0.4.5",
+    "loader-utils": "^1.1.0",
+    "preprocess": "^3.1.0",
+    "webpack": "^2.6.1"
+  }
+}
